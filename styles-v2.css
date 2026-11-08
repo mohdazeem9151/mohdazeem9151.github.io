@@ -271,3 +271,51 @@ a.project-featured:hover { background: #edf5fc; }
 .dissertation-gallery img { display: block; width: 100%; height: 220px; object-fit: cover; object-position: center 25%; }
 .dissertation-gallery figcaption { padding: 10px 12px; color: #c0c9d0; font-size: 12px; line-height: 1.45; }
 @media (max-width: 620px) { .dissertation-gallery { gap: 9px; } .dissertation-gallery img { height: 175px; } .dissertation-gallery figcaption { padding: 8px; font-size: 11px; } }
+
+/* --- 2026-11-08 update: tech-researcher hero, profile links, CVs, project photos --- */
+.profile-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.profile-links a { padding: 9px 14px; border: 1px solid rgba(23,23,25,.16); border-radius: 999px; background: rgba(255,255,255,.75); color: #33363d; font-size: 13px; font-weight: 700; transition: all .2s ease; }
+.profile-links a:hover { border-color: var(--blue); color: var(--blue-deep); transform: translateY(-1px); }
+.cv-downloads { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.button-outline { border: 1.5px solid var(--ink); color: var(--ink); background: transparent; }
+.button-outline:hover { background: var(--ink); color: #fff; }
+
+.hero-visual { background: #22303d; }
+.hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,18,26,.18) 0%, rgba(10,18,26,0) 34%, rgba(10,18,26,.38) 62%, rgba(10,18,26,.78) 100%); }
+.tech-chips { position: absolute; top: 14px; left: 14px; right: 14px; display: flex; flex-wrap: wrap; gap: 7px; }
+.tech-chips span { padding: 7px 11px; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; background: rgba(13,22,31,.55); color: #eaf3fb; font-size: 11px; font-weight: 700; letter-spacing: .06em; backdrop-filter: blur(8px); }
+.hero-stat { position: absolute; left: 18px; bottom: 132px; display: flex; align-items: center; gap: 10px; color: #fff; }
+.hero-stat strong { font: 800 34px/1 var(--display); letter-spacing: -.04em; }
+.hero-stat span { max-width: 190px; font-size: 11.5px; line-height: 1.45; color: #d7e5f0; }
+.terminal-card { position: absolute; left: 14px; right: 14px; bottom: 14px; padding: 12px 14px 11px; border: 1px solid rgba(255,255,255,.16); border-radius: 14px; background: rgba(11,18,25,.88); color: #cfe3f5; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; backdrop-filter: blur(10px); }
+.terminal-head { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; color: #7e93a6; font-size: 10.5px; }
+.terminal-head i { width: 9px; height: 9px; border-radius: 50%; background: #3d5468; }
+.terminal-head i:first-child { background: #e0655a; } .terminal-head i:nth-child(2) { background: #e5b95c; } .terminal-head i:nth-child(3) { background: #57b97c; }
+.terminal-head span { margin-left: 5px; }
+.terminal-card p { margin: 3px 0; }
+.terminal-card p b { color: #7ee2a0; font-weight: 700; }
+.terminal-card .terminal-out { color: #93c8ff; }
+
+.project-photo { position: relative; height: 190px; margin: 18px 0 20px; overflow: hidden; border-radius: 14px; background: #2a3641; }
+.project-featured .project-photo { height: 215px; }
+.project-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .35s ease; }
+a.project-card:hover .project-photo img { transform: scale(1.04); }
+.project-num { position: absolute; top: 10px; right: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(10,16,22,.55); color: #fff; font: 700 15px var(--display); letter-spacing: -.02em; backdrop-filter: blur(6px); }
+.project-photo figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 12px 8px; background: linear-gradient(180deg, transparent, rgba(5,10,15,.66)); color: #e8eef4; font-size: 10px; letter-spacing: .02em; }
+
+.site-footer { flex-wrap: wrap; }
+.photo-credits { flex-basis: 100%; order: 5; padding-bottom: 14px; color: #9a9ba1; font-size: 11px; line-height: 1.6; }
+.photo-credits a { color: #6f87a0; text-decoration: underline; text-underline-offset: 2px; }
+.photo-credits a:hover { color: var(--blue-deep); }
+
+@media (max-width: 620px) {
+  .hero-visual { aspect-ratio: 4 / 4.6; }
+  .hero-stat { bottom: 126px; left: 15px; }
+  .hero-stat strong { font-size: 27px; }
+  .hero-stat span { max-width: 160px; font-size: 10.5px; }
+  .terminal-card { font-size: 10.5px; left: 11px; right: 11px; bottom: 11px; }
+  .tech-chips { top: 11px; left: 11px; right: 11px; }
+  .project-photo, .project-featured .project-photo { height: 185px; }
+  .cv-downloads .button { width: 100%; }
+}
