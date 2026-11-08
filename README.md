@@ -11,7 +11,7 @@ Mohd Azeem is a social science researcher (M.Sc. Digital Society, Central Univer
 - **Experience** - Research Intern, IIT Delhi (HSS); Social Media Assistant, CURAJ; Country Ambassador - India, Dhaka University Research Society
 - **Selected research and data projects** - PLFS labour indicators, women's labour trends, HCES household consumption, e-NAM digital agriculture, and exploratory Stata analyses for India, Uttar Pradesh and Rae Bareli
 - **Dissertation** - Impact Assessment of Dvara KhetScore Model on Agricultural Credit Access among Farmers in Dudu and Phagi of Jaipur, Rajasthan (116 farm households; supervised by Dr. Jaya Kritika Ojha)
-- **CV downloads** - [Academic CV](assets/cv/Mohd-Azeem-Academic-CV.pdf) and [One-page CV](assets/cv/Mohd-Azeem-One-Page-CV.pdf)
+- **CV download** - [Academic CV](assets/cv/Mohd-Azeem-Academic-CV.pdf)
 
 ## Profiles
 
