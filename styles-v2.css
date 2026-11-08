@@ -347,3 +347,14 @@ a.project-card:hover .project-photo img { transform: scale(1.04); }
 @media (max-width: 900px) {
   .app-layout { grid-template-columns: 1fr; gap: 30px; }
 }
+
+/* --- 2026-11-08 update 3: StockItihas featured band at top + screenshot gallery --- */
+.app-band { background: linear-gradient(180deg, #0d1622 0%, #12202f 100%); padding: 74px 0 80px; margin-top: 6px; }
+.app-top .app-copy h2 { color: #f2f7fc; }
+.app-top .app-copy p { color: #b9cbdd; }
+.app-top .app-copy p strong { color: #eaf3fb; }
+.app-top .app-note { color: #7e93a6 !important; }
+.app-top .skill-list span { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.18); color: #d7e5f0; }
+.app-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 26px; }
+.app-gallery .app-shot img { height: 190px; width: 100%; object-fit: cover; object-position: top center; }
+@media (max-width: 900px) { .app-gallery { grid-template-columns: 1fr; } .app-gallery .app-shot img { height: auto; } }
